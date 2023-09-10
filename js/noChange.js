@@ -48,6 +48,7 @@ const displayQuizOptions = (quiz, i) => {
 // select or choose quiz
 const chooseQuiz = (index, givenAns) => {
   const isExist = answers.find((ans) => ans.id === quizData[index].id);
+  console.log(isExist);
   if (isExist) {
     let serial = 0;
     for (let quiz of answers) {
