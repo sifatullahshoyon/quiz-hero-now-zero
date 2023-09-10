@@ -11,18 +11,49 @@
   <main class="container mx-auto py-32">
     <section>
         <article class="py-5">
-            <h1> What is the difference between Map , Find , forEach ?</h1>
-            <p></p>
+            <h1 class="font-bold text-3xl pb-3"> What is the difference between Map , Find , forEach ?</h1>
+            <p class="text-xl pb-2 text-justify">
+              <span class="font-bold">ForEach: </span> ForEach function is used when many values are required from an array but those values are not used later. The foreach function does not return a value. The forEach function is a method of ES Six.
+            </p>
+            <p class="text-xl pb-2 text-justify">
+              <span class="font-bold">Map: </span>The map function is used when many values are required from an array but those values are used later. The map function returns a value. The map function is a method of ES Six.
+            </p>
+            <p class="text-xl pb-2 text-justify">
+              <span class="font-bold">Find: </span>When find is used on an array, it returns a single value. Find basically works based on conditions. If there are many values in an array, find will return the first value that matches the condition, if any other value matches the condition, find will return only the first value. A method of Find ES Six.
+            </p>
+            <p class="text-xl pb-2 text-justify">
+              <span class="font-bold">Filter: </span>When a filter is used on an array that returns more than one value. Filters basically work based on conditions. If there are many values in an array, the filter will return only those values that match the condition. A method of Find ES Six.
+            </p>
         </article>
         <article class="py-5">
             <h1 class="font-bold text-3xl pb-3">What is the difference between Local Storage, Secession Storage & Cookies?</h1>
-            <p class="text-xl pb-2">
+            <p class="text-xl pb-2 text-justify">
                  <span class="font-bold">localStorage</span> is a browser's memory, where small data can be stored, when a user or customer can bookmark some products of that website without logging in to a website, All the information of that product is actually stored in local storage, because The user has not given any of his information to the website, so none of the customer's or user's information can be kept in the database and as a result, it cannot be understood about that customer, so all his information is saved in the memory of the browser called local storage, so that the When the customer comes to the website again through the same browser of the device, he can see all the information again, all the information that he has bookmarked or edited in the previous time. If something is saved in local storage, it remains in that browser until the user deletes all that information.
             </p>
-            <p class="text-xl">
+            <p class="text-xl pb-2 text-justify">
                  <span class="font-bold">Session storage</span> is a browser's memory, where small data can be stored, when a user or customer can bookmark some products of that website without logging in to a website, All the information of that product is actually stored in the session storage, because The user has not given any of his information to the website, so no information of that customer or user can be kept in the database and as a result, it cannot be understood about that customer, so all that information is stored in the memory of the browser called session storage, so that the When the customer comes to the website again through the same browser of the device, he can see all the information again, all the information that he has bookmarked or edited in the previous time. If something is saved in the session storage, that information remains in the session storage until the user refreshes the page or closes the tab. If any data is saved in the session storage, the user does not see any information from another browser on the same website because the data is stored in the session storage for a temporary period.
             </p>
+            <p class="text-xl text-justify">
+                 <span class="font-bold">Cookies:</span> A cookie is an information that a website puts on a user's computer. Cookies store limited information from a web browser session on a given website that can then be retrieved in the future. They are also sometimes referred to as browser cookies, web cookies, or internet cookies.
+                 <p class="text-xl text-justify">
+                  Cookies can be accessed by the browser user, the site a user is on, or by a third party that might use the information for different purposes. Common use cases for cookies include session management, personalization, and tracking.
+                 </p>
+            </p>
         </article>
+        <article class="py-5">
+          <h1 class="font-bold text-3xl pb-3"> What is Event Loop ?</h1>
+          <p class="text-xl pb-2 text-justify">
+            <span class="font-bold">Event Loop: </span> Event loop is an important process system in JavaScript, which works between code and events (eg: browser click event, timeout event, network event). It defines the synthesis and scheduling of operations in JavaScript code.
+            <br><br> As the event loop works, it can be specified in the following steps:-
+              <ul class="text-xl list-disc ps-10">
+                <li>Call stack</li>
+                <li>Cal stack</li>
+                <li>Event handling</li>
+                <li>Event queue</li>
+                <li>Single thread</li>
+              </ul>
+          </p>
+      </article>
     </section>
   </main>
   <!-- End Main -->
