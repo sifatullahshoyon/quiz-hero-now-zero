@@ -111,7 +111,7 @@ document.querySelector("#submit").addEventListener("click", () => {
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("result"));
+  let storage = JSON.parse(localStorage.getItem("results"));
   if (storage) {
     localStorage.setItem(
       "results",
@@ -159,13 +159,12 @@ document.querySelector("#submit").addEventListener("click", () => {
   ${
     storage
       ? `<div class="mt-5">
-      <h1 class="text-center">Previous Submissions <button class="text-blue-800 text-xs" onclick={localStorage.clear();location.reload()}>Clear History</button></h1>
-    <div
-    class="flex justify-between items-center border rounded p-2 my-2 shadow-sm font-medium">
-    <div>Marks</div>
-    <div>Grade</div>
-    <div>Time</div>
-    </div>
+        <h1 class="text-center">Previous Submissions <button class="text-blue-800 text-xs" onclick={localStorage.clear();location.reload()}>Clear History</button></h1>
+        <div class="flex justify-between items-center border rounded p-2 my-2 shadow-sm font-medium">
+         <div>Marks</div>
+         <div>Grade</div>
+        <div>Time</div>
+        </div>
     ${storage
       ?.reverse()
       ?.map(
